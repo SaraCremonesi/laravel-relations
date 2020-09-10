@@ -48,7 +48,7 @@ class AlbumController extends Controller
      */
     public function show(Album $album)
     {
-      return view('album.show', compact());
+      return view('album.show', compact('album'));
     }
 
     /**

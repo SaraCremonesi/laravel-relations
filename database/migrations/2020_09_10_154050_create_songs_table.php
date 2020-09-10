@@ -18,7 +18,6 @@ class CreateSongsTable extends Migration
             $table->string('title');
             $table->float('minutes', 4, 2);
             $table->unsignedBigInteger('album_id'); // Avendo una relazione one-to-many tra album e canzoni, necessito di una foreign key
-            $table->timestamps();
             $table->foreign('album_id')
                   ->references('id')
                   ->on('albums');

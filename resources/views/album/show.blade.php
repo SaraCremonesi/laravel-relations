@@ -1,9 +1,10 @@
-@foreach ($album->songs as $song)
-  <ul>
-    <li>Titolo: {{ $new_song->title }} minuti</li>
-  </ul>
+<h1>Lista canzoni</h1>
+@foreach ($album->songs as $new_song)
+    <h3>Titolo: {{ $new_song->title }}</h3>
+    <p>{{ $new_song->minutes }} minuti</p>
   <div>
-    <a href="{{ route('song.show', $song) }}">Ascolta</a>
+    <a href="{{ route('album.listen', $new_song) }}">Ascolta</a>
+    <hr>
     {{-- Come completare il controller per inserire un'ulteriore link? --}}
   </div>
 @endforeach

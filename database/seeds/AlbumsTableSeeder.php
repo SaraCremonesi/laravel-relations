@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Faker\Generator as Faker;
+use App\Album;
 
 class AlbumsTableSeeder extends Seeder
 {
