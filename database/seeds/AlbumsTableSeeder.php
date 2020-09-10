@@ -28,6 +28,6 @@ class AlbumsTableSeeder extends Seeder
            ]
          );
          $new_album->save();
-       }
+       };
      }
 }
